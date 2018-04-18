@@ -14,13 +14,13 @@
 
         <meta name="author" content="40523219" />
         <meta name="keywords" content="筆記" />
-        <meta name="description" content="W5" />
+        <meta name="description" content="利用 Python3 找出缺席名單" />
 
         <meta property="og:site_name" content="協同產品設計實習" />
         <meta property="og:type" content="article"/>
         <meta property="og:title" content="Week5"/>
         <meta property="og:url" content="./week5.html"/>
-        <meta property="og:description" content="W5"/>
+        <meta property="og:description" content="利用 Python3 找出缺席名單"/>
         <meta property="article:published_time" content="2018-03-28" />
             <meta property="article:section" content="Course" />
             <meta property="article:tag" content="筆記" />
@@ -153,7 +153,41 @@
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <p>W5</p>
+                <h2>利用 Python3 找出缺席名單</h2>
+
+
+
+<pre>
+f1 = open('111.txt', 'r')
+f2 = open('222.txt', 'r')
+#讀取 111.txt(點名名單) & 222.txt(修課名單) 進行比對
+s1 = set(f1)
+s2 = set(f2)
+#將兩者集合
+print ('二乙缺席名單:')
+print (list(s1.symmetric_difference(s2)))
+</pre>
+
+<h2>顯示結果如下:</h2>
+
+<pre>
+二乙缺席名單:
+['40523224\n', '40523232\n', '40523212\n', '40523234\n', '40523227\n', '40523231\n', '40523217\n', '40523222\n']
+</pre>
+
+<h2>參考資料:</h2>
+
+<h4>Python3 字串型態</h4>
+
+<p><a href="https://openhome.cc/Gossip/Python/StringType.html">https://openhome.cc/Gossip/Python/StringType.html </a>
+<h4>Python3 集合set說明</h4>
+<a href="http://www.iplaypy.com/jichu/set.html">http://www.iplaypy.com/jichu/set.html </a>
+<h4>Python3 輸出與輸入</h4>
+<a href="http://docspy3zh.readthedocs.io/en/latest/tutorial/inputoutput.html">http://docspy3zh.readthedocs.io/en/latest/tutorial/inputoutput.html </a>
+<h4>差集、相對差集、絕對差集</h4>
+<a href="https://zh.wikipedia.org/wiki/%E8%A1%A5%E9%9B%86">https://zh.wikipedia.org/wiki/%E8%A1%A5%E9%9B%86 </a>
+<h4>比較兩者字串</h4>
+<a href="http://wiki.alarmchang.com/index.php?title=%E6%AF%94%E8%BC%83%E5%85%A9%E5%80%8B_List_%E4%B9%8B%E9%96%93%E7%9A%84%E5%B7%AE%E7%95%B0">http://wiki.alarmchang.com/index.php?title=%E6%AF%94%E8%BC%83%E5%85%A9%E5%80%8B_List_%E4%B9%8B%E9%96%93%E7%9A%84%E5%B7%AE%E7%95%B0 </a></p>
             </div>
             <!-- /.entry-content -->
         </article>
@@ -181,6 +215,11 @@
                     <li class="list-group-item">
                         <a href="./week4.html">
                             Week4
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="./week3.html">
+                            Week3
                         </a>
                     </li>
                 </ul>

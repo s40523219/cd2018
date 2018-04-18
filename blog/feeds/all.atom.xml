@@ -1,19 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>協同產品設計實習</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2018-04-11T12:00:00+08:00</updated><entry><title>Week7</title><link href="./week7.html" rel="alternate"></link><published>2018-04-11T12:00:00+08:00</published><updated>2018-04-11T12:00:00+08:00</updated><author><name>40523219</name></author><id>tag:None,2018-04-11:./week7.html</id><summary type="html">&lt;p&gt;W7&lt;/p&gt;</summary><content type="html">&lt;p&gt;W7&lt;/p&gt;</content><category term="筆記"></category></entry><entry><title>Week5</title><link href="./week5.html" rel="alternate"></link><published>2018-03-28T12:00:00+08:00</published><updated>2018-03-28T12:00:00+08:00</updated><author><name>40523219</name></author><id>tag:None,2018-03-28:./week5.html</id><summary type="html">&lt;p&gt;W5&lt;/p&gt;</summary><content type="html">&lt;p&gt;W5&lt;/p&gt;</content><category term="筆記"></category></entry><entry><title>Week4</title><link href="./week4.html" rel="alternate"></link><published>2018-03-21T12:00:00+08:00</published><updated>2018-03-21T12:00:00+08:00</updated><author><name>40523219</name></author><id>tag:None,2018-03-21:./week4.html</id><summary type="html">&lt;h2&gt;利用 &lt;b&gt;reg登錄檔&lt;/b&gt; 更快速對 Proxy 進行更改.&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>協同產品設計實習</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2018-04-11T12:00:00+08:00</updated><entry><title>Week7</title><link href="./week7.html" rel="alternate"></link><published>2018-04-11T12:00:00+08:00</published><updated>2018-04-11T12:00:00+08:00</updated><author><name>40523219</name></author><id>tag:None,2018-04-11:./week7.html</id><summary type="html">&lt;p&gt;W7&lt;/p&gt;</summary><content type="html">&lt;p&gt;W7&lt;/p&gt;</content><category term="筆記"></category></entry><entry><title>Week5</title><link href="./week5.html" rel="alternate"></link><published>2018-03-28T12:00:00+08:00</published><updated>2018-03-28T12:00:00+08:00</updated><author><name>40523219</name></author><id>tag:None,2018-03-28:./week5.html</id><summary type="html">&lt;h2&gt;利用 Python3 找出缺席名單&lt;/h2&gt;
+
+</summary><content type="html">&lt;h2&gt;利用 Python3 找出缺席名單&lt;/h2&gt;
+
+
 
 &lt;pre&gt;
-&lt;li&gt;內容第一行必須為 REGEDIT4 (必須大寫, 而且必須在第一行, REGEDIT4 是 Windows 95/98/ME/NT, 5 是 Windows2000/XP), 看&lt;br&gt;你使用的環境來選擇 REGEDIT4 或 Windows Registry Editor Version 5.00
-&lt;li&gt;第二行必須空行
-&lt;li&gt;第三行即編輯機碼以及其值
+f1 = open('111.txt', 'r')
+f2 = open('222.txt', 'r')
+#讀取 111.txt(點名名單) &amp; 222.txt(修課名單) 進行比對
+s1 = set(f1)
+s2 = set(f2)
+#將兩者集合
+print ('二乙缺席名單:')
+print (list(s1.symmetric_difference(s2)))
+&lt;/pre&gt;
+
+&lt;h2&gt;顯示結果如下:&lt;/h2&gt;
+
+&lt;pre&gt;
+二乙缺席名單:
+['40523224\n', '40523232\n', '40523212\n', '40523234\n', '40523227\n', '40523231\n', '40523217\n', '40523222\n']
 &lt;/pre&gt;
 
 &lt;h2&gt;參考資料:&lt;/h2&gt;
 
-&lt;h4&gt;可攜程式套件系統升級&lt;/h4&gt;
+&lt;h4&gt;Python3 字串型態&lt;/h4&gt;
 
-&lt;p&gt;&lt;a href="https://github.com/mdecourse/cd2018/issues/15"&gt;https://github.com/mdecourse/cd2018/issues/15 &lt;/a&gt;
-&lt;h4&gt;如何製作 *.reg /登錄檔&lt;/h4&gt;
-&lt;a href="http://domon80501.pixnet.net/blog/post/70076040"&gt;http://domon80501.pixnet.net/blog/post …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;h2&gt;利用 &lt;b&gt;reg登錄檔&lt;/b&gt; 更快速對 Proxy 進行更改.&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://openhome.cc/Gossip/Python/StringType.html"&gt;https://openhome.cc/Gossip/Python/StringType.html &lt;/a&gt;
+&lt;h4&gt;Python3 集合set說明&lt;/h4&gt;
+&lt;a href="http://www.iplaypy.com/jichu/set.html"&gt;http://www.iplaypy.com/jichu/set.html &lt;/a&gt;
+&lt;h4&gt;Python3 輸出與輸入&lt;/h4&gt;
+&lt;a href="http://docspy3zh.readthedocs.io/en/latest/tutorial/inputoutput.html"&gt;http://docspy3zh.readthedocs.io/en/latest/tutorial/inputoutput.html &lt;/a&gt;
+&lt;h4&gt;差集、相對差集、絕對差集&lt;/h4&gt;
+&lt;a href="https://zh.wikipedia.org/wiki/%E8%A1%A5%E9%9B%86"&gt;https://zh.wikipedia.org/wiki/%E8%A1%A5%E9%9B%86 &lt;/a&gt;
+&lt;h4&gt;比較兩者字串&lt;/h4&gt;
+&lt;a href="http://wiki.alarmchang.com/index.php?title=%E6%AF%94%E8%BC%83%E5%85%A9%E5%80%8B_List_%E4%B9%8B%E9%96%93%E7%9A%84%E5%B7%AE%E7%95%B0"&gt;http://wiki.alarmchang.com/index.php?title=%E6%AF%94%E8%BC%83%E5%85%A9%E5%80%8B_List_%E4%B9%8B%E9%96%93%E7%9A%84%E5%B7%AE%E7%95%B0 &lt;/a&gt;&lt;/p&gt;</content><category term="筆記"></category></entry><entry><title>Week4</title><link href="./week4.html" rel="alternate"></link><published>2018-03-21T12:00:00+08:00</published><updated>2018-03-21T12:00:00+08:00</updated><author><name>40523219</name></author><id>tag:None,2018-03-21:./week4.html</id><summary type="html">&lt;h2&gt;利用 &lt;b&gt;reg登錄檔&lt;/b&gt; 更快速對 Proxy 進行更改.&lt;/h2&gt;
+
+</summary><content type="html">&lt;h2&gt;利用 &lt;b&gt;reg登錄檔&lt;/b&gt; 更快速對 Proxy 進行更改.&lt;/h2&gt;
+
+
 
 &lt;pre&gt;
 &lt;li&gt;內容第一行必須為 REGEDIT4 (必須大寫, 而且必須在第一行, REGEDIT4 是 Windows 95/98/ME/NT, 5 是 Windows2000/XP), 看&lt;br&gt;你使用的環境來選擇 REGEDIT4 或 Windows Registry Editor Version 5.00
@@ -44,4 +70,29 @@
 &lt;p&gt;&lt;a href="http://mde.tw/vecp2018/lua/SchoolProject/"&gt;http://mde.tw/vecp2018/lua/SchoolProject/ &lt;/a&gt;&lt;/p&gt;
 &lt;h4&gt;Brython 3.3.4 程式環境&lt;/h4&gt;
 
-&lt;p&gt;&lt;a href="http://lab.kmol.info/blog/brython-programming-environment.html"&gt;http://lab.kmol.info/blog/brython-programming-environment.html &lt;/a&gt;&lt;/p&gt;</content><category term="筆記"></category></entry></feed>
+&lt;p&gt;&lt;a href="http://lab.kmol.info/blog/brython-programming-environment.html"&gt;http://lab.kmol.info/blog/brython-programming-environment.html &lt;/a&gt;&lt;/p&gt;</content><category term="筆記"></category></entry><entry><title>Week3</title><link href="./week3.html" rel="alternate"></link><published>2018-03-13T12:00:00+08:00</published><updated>2018-03-13T12:00:00+08:00</updated><author><name>40523219</name></author><id>tag:None,2018-03-13:./week3.html</id><summary type="html">&lt;h4&gt;將個人在上學期鋼球循環運動中所完成的內容，整理到各組的 gitbook 線上報告中&lt;/h4&gt;
+
+&lt;h4&gt;將各組的 gitbook 連結，提供在當週 issue 回應中&lt;/h4&gt;
+
+</summary><content type="html">&lt;h4&gt;將個人在上學期鋼球循環運動中所完成的內容，整理到各組的 gitbook 線上報告中&lt;/h4&gt;
+
+&lt;h4&gt;將各組的 gitbook 連結，提供在當週 issue 回應中&lt;/h4&gt;
+
+
+
+&lt;pre&gt;
+&lt;li&gt;&lt;b&gt;軌道尺寸規格 : &lt;/b&gt;23.5 x 17.5 x 16 (mm)
+&lt;li&gt;&lt;b&gt;單次運行時間 : &lt;/b&gt;27s
+&lt;li&gt;&lt;b&gt;單次運行路徑長 : &lt;/b&gt;104.27 ~ 117 cm
+&lt;li&gt;&lt;b&gt;心得 :&lt;/b&gt;
+    導入雲端繪圖(Onshape)，因為使用雲端存取功能，使用上比較沒有類似 Inventor &amp; Slideworld 的功能以及即時存取好，&lt;br&gt;    但它的優點就是可以隨時隨地打開資料且修改；雖然功能能夠減少許多作業疏失，但我覺得 V-rep 在操作方面分劃太粗略。
+&lt;/pre&gt;
+
+&lt;h4&gt;影片連結 :&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/251265772"&gt;https://vimeo.com/251265772 &lt;/a&gt;
+&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+        &lt;iframe src="https://vimeo.com/251265772" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+    &lt;/script&gt;
+&lt;/section&gt;&lt;/p&gt;</content><category term="筆記"></category></entry></feed>
