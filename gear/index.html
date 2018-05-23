@@ -1,34 +1,15 @@
-Title: Week12
-Date: 2018-05-23 12:00
-Category: Course
-Tags: Brython正齒輪繪製
-Author: 40523219
-
-<h3>第十二週課程</h3>
-1.請各組員在各自的 Github Pages 中繪製一個自選齒數的漸開線正齒輪輪廓外型.<br>
-2.完成單一齒輪輪廓繪圖後, 請繪製一組 50t 與 25t 的齒輪嚙合靜態輪廓圖.<br>
-3.完成兩齒嚙合靜態繪圖後, 請嘗試轉為動態繪圖.<br>
-<h4>完成上述任務後, 請在下列 comments 回報繪圖連結.</h4>
-
-<!-- PELICAN_END_SUMMARY -->
-
-<p>利用漸開線原理, 以 Brython 繪製單一正齒輪廓:</p>
-<!-- 導入 Brython 標準程式庫 -->
-
-<script src="../data/Brython-3.5.1/brython.js"></script>
-
-<script src="../data/Brython-3.5.1/brython_stdlib.js"></script>
-
-<!-- 啟動 Brython -->
-
+<html>
+<head>
+</head>
+<body>
 <script>
 window.onload=function(){
 // 設定 data/py 為共用程式路徑
-brython({debug:1, pythonpath:['./../data/py']});
+brython({debug:1, pythonpath:['./']});
 }
 </script>
-
 <!-- 以下實際利用  Brython 繪圖-->
+
 <canvas id="onegear" width="800" height="600"></canvas>
 
 <script type="text/python3">
@@ -40,6 +21,7 @@ deg = math.pi/180.
 class Spur(object):
     def __init__(self, ctx):
         self.ctx = ctx
+
     def create_line(self, x1, y1, x2, y2, width=3, fill="red"):
         self.ctx.beginPath()
         self.ctx.lineWidth = width
@@ -162,3 +144,7 @@ n = 53
 pa = 20
 Spur(ctx).Gear(x, y, r, n, pa, "blue")
 </script>
+<script src="Brython-3.5.1/brython.js"></script>
+<script src="Brython-3.5.1/brython_stdlib.js"></script>
+</body>
+</html>
