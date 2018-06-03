@@ -317,7 +317,7 @@ def setgearnumber(e):
         cgo.render(gear1, {'x':cx, 'y':cy, 'scl':reduced_ratio, 'degs':180+(360/n2/2)})
     set_interval(draw, 2)
 
-    # 只使用畫布高度的 80%
+    # 只使用畫布高度的 40%
     canvas_size = canvas.height*0.4
     r17 = canvas_size*n2/(n+n2)
     r11 = r17*n2/n
@@ -517,7 +517,7 @@ def setgearnumber(e):
         cgo.render(gear1, {'x':cx, 'y':cy, 'scl':reduced_ratio, 'degs':180+(360/n2/2)})
     set_interval(draw, 2)
 
-    # 只使用畫布高度的 80%
+    # 只使用畫布高度的 40%
     canvas_size = canvas.height*0.4
     r17 = canvas_size*n2/(n+n2)
     r11 = r17*n2/n
@@ -571,6 +571,11 @@ doc['button_d'].bind('click',setgearnumber)
             <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
                 <ul class="list-group" id="recentposts">
                     <li class="list-group-item">
+                        <a href="./hui-zhi-zu-he-zhuan-dong-zheng-chi-lun-2.html">
+                            繪製組合轉動正齒輪2
+                        </a>
+                    </li>
+                    <li class="list-group-item">
                         <a href="./hui-zhi-zu-he-zhuan-dong-zheng-chi-lun.html">
                             繪製組合轉動正齒輪
                         </a>
@@ -588,11 +593,6 @@ doc['button_d'].bind('click',setgearnumber)
                     <li class="list-group-item">
                         <a href="./week12.html">
                             Week12
-                        </a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="./week7.html">
-                            Week7
                         </a>
                     </li>
                 </ul>
