@@ -1,5 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>協同產品設計實習</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2018-05-23T12:04:00+08:00</updated><entry><title>繪製組合轉動正齒輪2</title><link href="./hui-zhi-zu-he-zhuan-dong-zheng-chi-lun-2.html" rel="alternate"></link><published>2018-05-23T12:04:00+08:00</published><updated>2018-05-23T12:04:00+08:00</updated><author><name>40523219</name></author><id>tag:None,2018-05-23:./hui-zhi-zu-he-zhuan-dong-zheng-chi-lun-2.html</id><summary type="html"></summary><content type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>協同產品設計實習</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2018-06-24T12:04:00+08:00</updated><entry><title>Pull Requests 導入教學</title><link href="./pull-requests-dao-ru-jiao-xue.html" rel="alternate"></link><published>2018-06-24T12:04:00+08:00</published><updated>2018-06-24T12:04:00+08:00</updated><author><name>40523219</name></author><id>tag:None,2018-06-24:./pull-requests-dao-ru-jiao-xue.html</id><summary type="html">&lt;p&gt;利用 Pull Requests 的分支功能，能夠便利開發者之間的協同，如果在協同上有任何變更或者嘗試，即可利用此功能將倉儲以複製分支的方式，將其拉出進行測試及微調，測試後若無異議，即可將其回推主分支，再由管理者檢測並同意合併。&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;利用 Pull Requests 的分支功能，能夠便利開發者之間的協同，如果在協同上有任何變更或者嘗試，即可利用此功能將倉儲以複製分支的方式，將其拉出進行測試及微調，測試後若無異議，即可將其回推主分支，再由管理者檢測並同意合併。&lt;/p&gt;
+
+
+&lt;h3&gt;前言&lt;/h3&gt;
+&lt;p&gt;Github 中的 Fork 功能即為遠端的複製倉儲，當中包含了原倉儲的現有內容及所有提交資料，將擁有該複製倉儲內容的提交權限；因此利用 Fork 提出個人意見及修改，再透過 pull requests 回傳給原倉儲開發者，提交你對於該倉儲所做的個人貢獻。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="ex0" src="./../image/ex0.png"&gt;&lt;/p&gt;
+&lt;h4&gt;步驟一&lt;/h4&gt;
+&lt;p&gt;從目標倉儲點擊右上角的 Fork 按鈕，即為子分支。
+&lt;img alt="ex1" src="./../image/ex1.png"&gt;&lt;/p&gt;
+&lt;h4&gt;步驟二&lt;/h4&gt;
+&lt;p&gt;克隆倉儲加以修改內容並回推，即為回推主分支。
+&lt;img alt="ex2" src="./../image/ex2.png"&gt;&lt;/p&gt;
+&lt;h4&gt;步驟三&lt;/h4&gt;
+&lt;p&gt;使用 Pull Requests 前，須先注意子分支與主分支的版次，是否接近或者相同。
+&lt;img alt="ex3" src="./../image/ex3.png"&gt;&lt;/p&gt;
+&lt;p&gt;利用 Pull Requests 反向更新子分支的版次。
+&lt;img alt="ex3-2" src="./../image/ex3-2.png"&gt;&lt;/p&gt;
+&lt;p&gt;意思是將 scrum-1/gitbook 回推給 s40523219/gitbook，即為更新子分支版次。
+&lt;img alt="ex3-3" src="./../image/ex3-3.png"&gt;&lt;/p&gt;
+&lt;p&gt;再由擁有該分支的管理員人員同意，即為確認更新。
+&lt;img alt="ex3-4" src="./../image/ex3-4.png"&gt;&lt;/p&gt;
+&lt;h4&gt;步驟四&lt;/h4&gt;
+&lt;p&gt;反之，將 A 和 B 兩者互換，即為反向回推。
+&lt;img alt="ex4" src="./../image/ex4.png"&gt;&lt;/p&gt;
+&lt;h3&gt;補充內容&lt;/h3&gt;
+&lt;p&gt;使用git push無法上傳
+&lt;a href="https://github.com/s40523219/cd2018/wiki/Error-:-git-push"&gt;https://github.com/s40523219/cd2018/wiki/Error-:-git-push&lt;/a&gt; &lt;/p&gt;</content><category term="筆記"></category></entry><entry><title>繪製組合轉動正齒輪2</title><link href="./hui-zhi-zu-he-zhuan-dong-zheng-chi-lun-2.html" rel="alternate"></link><published>2018-05-23T12:04:00+08:00</published><updated>2018-05-23T12:04:00+08:00</updated><author><name>40523219</name></author><id>tag:None,2018-05-23:./hui-zhi-zu-he-zhuan-dong-zheng-chi-lun-2.html</id><summary type="html"></summary><content type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;!-- 導入 Brython 標準程式庫 --&gt;
 
